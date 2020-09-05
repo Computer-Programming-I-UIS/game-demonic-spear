@@ -54,7 +54,7 @@ void setup() {
   lanza = loadImage("arma del demonio.png");
   cruz= loadImage("arma de los malos.png");
   vomito = loadImage("cruz grande.png");
-  slogan = loadImage("Slogan.png");
+  slogan = loadImage("Menu.png");
   de = loadImage("demo.png");
   demonio[0]=de.get(0,0,34,50);
   demonio[1]=de.get(34,0,34,50);
