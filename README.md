@@ -15,16 +15,30 @@ El juego es una adaptacion de Galaga, un clasico del mundo arcade, en el juego e
 - Creditos.
 
 ## Visualizacion del juego
-Banner
+
+BANNER
+
 ![Banner](https://1.bp.blogspot.com/-QN7DjKpy-WA/X1Lm9U-iCkI/AAAAAAAAvic/NFqhtR0PPb4MCrs13uvFxno4KdMnSK_AACLcBGAsYHQ/s320/banner.png)
-Pantalla de Inicio
-![Pantalla](https://1.bp.blogspot.com/-GfdLOv4bs6A/X0WctgBZ3kI/AAAAAAAAu9w/ZjBNZ_rIg540kCBfpf1rTe8XnFbgURTlgCLcBGAsYHQ/s640/Pantalla.png)
-Menu del juego
-![Menu](https://1.bp.blogspot.com/-QqsXJixEn4w/X0WdJ-t_lxI/AAAAAAAAu94/FCsXe0ldoXMJXXlceDgt-sfgCKH4GMw-QCLcBGAsYHQ/s640/Menu.png)
-Captura del Juego
-![Juego 1](https://1.bp.blogspot.com/-RVp_Oi8O2-w/X0WfjIdj1VI/AAAAAAAAu-U/A8HLzZ4z5HMgG3OhJRnynAHilfjsYkGvwCLcBGAsYHQ/s640/Juego%2B1.png)
-Niveles Avanzados
-![Juego 2](https://1.bp.blogspot.com/-e5IkgXms5R0/X0Wf0UWEQZI/AAAAAAAAu-c/EFrvYnidwyYZ7qRdfq0B0te2cg1n7Ts_wCLcBGAsYHQ/s640/Juego%2B2.png)
+
+PANTALLA DE IMICIO
+
+![Inicio](https://1.bp.blogspot.com/-1kFmzqmHYe0/X1MjOIuWG5I/AAAAAAAAvlg/bnlnJC2HFHIOwG-N6Hv-bQdH4sgiuvMgQCLcBGAsYHQ/s320/Inicio.png)
+
+MENU DEL JUEGO
+
+![Menu](https://1.bp.blogspot.com/--O8byPqGMOc/X1MjjQYA4RI/AAAAAAAAvlo/nhRhHLKRPeolTwcRoK8F6fj774YpoSeTgCLcBGAsYHQ/s320/Menu.png)
+
+INATRUCCIONES
+
+![Instrucciones](https://1.bp.blogspot.com/-ijzjQlVdSH0/X1MjxUVNf7I/AAAAAAAAvls/UMnEP-HryAIbympCOWczXeGJ24ltWMazACLcBGAsYHQ/s320/Instrucciones.png)
+
+GAMEPLAY
+
+CAPTURAS DEL JUEGO
+
+![Juego 1](https://1.bp.blogspot.com/-c7W_Uh5jirY/X1MkHtTPHkI/AAAAAAAAvl4/1wIgRK6N3TopFyYPTli5LpnWlQJ5yplDwCLcBGAsYHQ/s320/Juego%2B1.png)
+
+![Juego 2](https://1.bp.blogspot.com/-z97UctxrRIs/X1MkVDEHTeI/AAAAAAAAvl8/TJe5C5mR58IHqaelnx_2a6SBEACLnhYOwCLcBGAsYHQ/s320/Juego%2B2.png)
 
 ## Autores 
 -Juan Sebastian Toloza Ortega (B1)
