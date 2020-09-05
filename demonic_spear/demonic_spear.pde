@@ -3,8 +3,12 @@
 //DATOS DEL JUEGO:
 //Imagenes y musica y algunas variables.
 import ddf.minim.*;
+Minim fin;
 Minim gestor;
-AudioPlayer musica_fondo;
+Minim musica;
+AudioPlayer bye;
+AudioPlayer go;
+AudioPlayer men;
 PImage historia;
 PImage lanza;
 PImage cruz;
@@ -39,10 +43,17 @@ boolean nuevonivel, enemigosaparecen, fantasmasaparecen, nuevo;//variables de ve
 
 //carga de imagenes ,sprites y musica tambien es donde se divide el movimiento de los sprites.
 void setup() {
+  
+ musica = new Minim(this);
+  men= musica.loadFile("menu.mp3");
+   men.setGain(-25);
+ men.loop();
   gestor = new Minim(this);
-  musica_fondo= gestor.loadFile("musica-suspenso-.mp3");
-  musica_fondo.setGain(-20);
-  musica_fondo.loop();
+  go= gestor.loadFile("musica-suspenso-.mp3");
+  fin= new Minim(this);
+  bye=fin.loadFile("fin.mp3");
+   bye.setGain(-25);
+
   frente=new PImage[4];
   demon=new PImage[10];
   mago= new PImage[10];
@@ -132,6 +143,7 @@ void setup() {
 void draw() {
    frameRate(20); 
   bg();
+
   if (niveles<2)
     menu();
   if (niveles==2)
@@ -142,6 +154,7 @@ void draw() {
                                                                  
 //Controles de el teclado del juego y acciones de las etapas.
 void keyPressed() {
+   
   //El principio de juego con el menu de opciones.
   if (niveles<2) {
     
@@ -203,16 +216,21 @@ if (keyCode=='E'){
   
 
   
-  
+ 
  //Muestra lo que aparece cuando mueres.
+
   if (niveles==3){
+    
     if (keyCode == LEFT || keyCode == RIGHT){
-      if (reiniciar==0)
+      if (reiniciar==0){
+        
         reiniciar=1;
-      else
-        reiniciar=0;
+        
+      } else{
+        reiniciar=0;}
     }
     if (key==' '){
+       
       if (reiniciar==0){
         tiempog=0;
         niveles=1;
@@ -221,7 +239,8 @@ if (keyCode=='E'){
         enemigosaparecen=false;
         fantasmasaparecen=false;
         puntaje=0;
-      
+      go.pause();
+     
       
   }if (reiniciar==1){
     exit();
@@ -232,6 +251,8 @@ if (keyCode=='E'){
 }
 //Etapas de los niveles.
 void keyReleased() {
+ 
+ 
   if (tiempog>150 || nivel>1){
     jugador.halt();
     jugador.ceaseFire();
@@ -299,11 +320,16 @@ void menu() {
 }
 //Empieza el juego.
 void game(){
+  men.pause();
   //Tiempo del juego.
   tiempog++;
-  
+   
+ 
   //Las istrucciones del juego y el nivel.
   if (tiempog<150 && nivel==1){
+      go.setGain(-25);
+      go.loop();
+  
     nuevonivel=false;
     textAlign(CENTER);
     textSize(48);
@@ -416,6 +442,7 @@ void game(){
     textSize(36);
     textAlign(RIGHT, TOP);
     text("PUNTOS : "+puntaje, width, 0); 
+    
   }
   if (nuevo){
     //vida extra
@@ -439,9 +466,14 @@ void game(){
 }
 //Fin del juego o cuando mueres.
 void gameOver(){
+
+  
+  men.loop();
+  
   textAlign(CENTER);
   textSize(48);
   fill(255);
+  
   text("FIN DEL JUEGO", width/2, height/3);
   textSize(42);
   text("PUNTAJE: "+puntaje, width/2, height/2);
