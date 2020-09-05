@@ -28,7 +28,7 @@ public class Lanza{
     pos.sub(vel);
     //dibuja el arma de las monjas.
     }else if(tipodevillano && pos.y>0 && !sangrado){
-      image(cruz, pos.x, pos.y, 12, 12);
+      image(cruz, pos.x, pos.y, 15, 20);
     pos.sub(vel);
     }else if (sangrado){
       contadorl++;
