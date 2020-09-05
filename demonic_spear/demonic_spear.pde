@@ -99,7 +99,7 @@ void setup() {
   frente[2]=j.get(72,0,49,54);
   frente[3]=j.get(136,0,50,54);
   fondo = loadImage("fondo.png");
-  fuente = createFont("Legendaire.ttf",35);
+  fuente = createFont("Unforgettable.ttf",30);
   textFont(fuente);
   explosion = loadImage("sangre.png");
   for (int i=0; i<explosionAnim.length/4;i++){
@@ -172,7 +172,7 @@ void keyPressed() {
          
       background(0);
         fill(255,255,0);
-        textSize(35);
+        textSize(30);
         
         text("CREDITOS", width/2, height/4);
         text("JHORMAN STIVEN MALDONADO REY", width/2, height/4+50);
@@ -270,7 +270,7 @@ void menu() {
   //Empieza el juego.
     if (frameCount%100<60) {
       fill(255);  
-      textSize(36);
+      textSize(35);
       text("PRESIONE ESPACIO PARA EMPEZAR", width/2, (height/2)-15);
     }
   }
@@ -278,7 +278,7 @@ void menu() {
   //Menu de opciones.
   if (niveles==1) {
    
-    textSize(36);
+    textSize(30);
     fill(255,0,255);
     
     text("SELECT DIFFICULTY:", width/2, height/3);
@@ -321,7 +321,7 @@ void game(){
   }else if(tiempog<150 && nivel>1){
     nuevonivel=false;
     textAlign(CENTER);
-    textSize(48);
+    textSize(45);
     fill(255,255,0);
     text("NIVEL "+nivel, width/2, height/2);
     jugador.display();
@@ -414,12 +414,12 @@ void game(){
   //Niveles segun su dificultad de enemigos.
   if (tiempog>=270 && enemies.size()>0){
     fill(255);
-    textSize(36);
+    textSize(35);
     textAlign(LEFT, TOP);
-    text("NIVEL "+nivel, 0, 0);
+    text("NIVEL "+nivel, 5, 5);
     textSize(36);
     textAlign(RIGHT, TOP);
-    text("PUNTOS : "+puntaje, width, 0); 
+    text("PUNTOS : "+puntaje, width-5, 5); 
   }
   if (nuevo){
     //vida extra
@@ -442,18 +442,18 @@ void game(){
 //Fin del juego o cuando mueres.
 void gameOver(){
   textAlign(CENTER);
-  textSize(48);
+  textSize(45);
   fill(255);
   text("FIN DEL JUEGO", width/2, height/3);
-  textSize(42);
+  textSize(40);
   text("PUNTAJE: "+puntaje, width/2, height/2);
   text("REINICIAR", width/2, height/2+150);
-  textSize(36);
-  text("SI     NO", width/2, height/2+180);
+  textSize(35);
+  text("SI     NO", width/2, height/2+200);
   fill(0);{
   if (reiniciar==0)
-  text("o         ", width/2-28, height/2+180);
+  text("o         ", width/2-35, height/2+200);
   if (reiniciar==1) 
-  text("       o  ", width/2-22, height/2+180);
+  text("       o  ", width/2-22, height/2+200);
   }
 }
