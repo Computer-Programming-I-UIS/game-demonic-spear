@@ -29,6 +29,7 @@ int x=0;
 int n=0;
 int k=0;
 PImage instrucciones;
+PFont fuente;
 //variables usadas en todas las clases del juego.
 
 Jugador jugador;
@@ -98,6 +99,8 @@ void setup() {
   frente[2]=j.get(72,0,49,54);
   frente[3]=j.get(136,0,50,54);
   fondo = loadImage("fondo.png");
+  fuente = createFont("Legendaire.ttf",35);
+  textFont(fuente);
   explosion = loadImage("sangre.png");
   for (int i=0; i<explosionAnim.length/4;i++){
       for (int j=0; j<explosionAnim.length/4;j++){
@@ -179,6 +182,7 @@ void keyPressed() {
         text("PISKEL", width/2, height/4+250);
         text("HOLLOW KNIGHT", width/2, height/4+300);
         text("SONIDOS MP3", width/2, height/4+350);
+        text("DOOM",width/2, height/4+400);
         }
        
        
@@ -265,7 +269,7 @@ void menu() {
     
   //Empieza el juego.
     if (frameCount%100<60) {
-      fill(0);  
+      fill(255);  
       textSize(36);
       text("PRESIONE ESPACIO PARA EMPEZAR", width/2, (height/2)-15);
     }
@@ -278,17 +282,17 @@ void menu() {
     fill(255,0,255);
     
     text("SELECT DIFFICULTY:", width/2, height/3);
-     fill(255);
+     fill(0);
     text("FACIL", width/2, height/3+50);
     text("NORMAL", width/2, height/3+100);
     text("DIFICIL", width/2, height/3+150);
-     fill(255,0,255);
+     fill(255);
     if (dificultad==0)
-      text(">", width/2-150, height/3+50);
+      text("o", width/2-75, height/3+50);
     if (dificultad==1)
-      text(">", width/2-150, height/3+100);
+      text("o", width/2-75, height/3+100);
     if (dificultad==2)
-      text(">", width/2-150, height/3+150);
+      text("o", width/2-75, height/3+150);
     fill(0,255,50);
     text("MANTE PULSADO X PARA HISTORIA", width/2, height/3+300); 
     text("PULSE E PARA SALIR", width/2, height/3+400); 
@@ -421,7 +425,7 @@ void game(){
     //vida extra
     tiempouno++;
     if(tiempouno<100 && tiempouno>0){
-      fill(255);
+      fill(0);
       textSize(36);
       textAlign(CENTER);
       text("VIDA EXTRA GANADA", width/2,height/2);
@@ -433,8 +437,6 @@ void game(){
       
   }
   
-  
-
   
 }
 //Fin del juego o cuando mueres.
@@ -448,8 +450,10 @@ void gameOver(){
   text("REINICIAR", width/2, height/2+150);
   textSize(36);
   text("SI     NO", width/2, height/2+180);
+  fill(0);{
   if (reiniciar==0)
-    text(">         ", width/2-28, height/2+180);
-  if (reiniciar==1)
-    text("      >   ", width/2-20, height/2+180);
+  text("o         ", width/2-28, height/2+180);
+  if (reiniciar==1) 
+  text("       o  ", width/2-22, height/2+180);
+  }
 }
