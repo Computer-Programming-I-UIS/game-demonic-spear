@@ -182,18 +182,31 @@ void keyPressed() {
     if(keyCode=='C'){
          
       background(0);
-        fill(255,255,0);
+        fill(0,300,100);
         textSize(30);
-        
-        text("CREDITOS", width/2, height/4);
-        text("JHORMAN STIVEN MALDONADO REY", width/2, height/4+50);
-        text("JUAN SEBASTIAN TOLOZA ORTEGA", width/2, height/4+100);
-        text("TATIANA MALDONADO", width/2, height/4+150);
-        text("GALAGA", width/2, height/4+200);
-        text("PISKEL", width/2, height/4+250);
-        text("HOLLOW KNIGHT", width/2, height/4+300);
-        text("SONIDOS MP3", width/2, height/4+350);
-        text("DOOM",width/2, height/4+400);
+        text("CREDITOS", width/2, (height/4)-120);
+        fill(255,255,255);
+         text("AUTORES", width/2, (height/4)-70);
+          text("INSPIRACION DE LOS PERSONAJES", width/2, (height/4)+5);
+          text("FONDOS", width/2, (height/4)+105);
+          text("SONIDOS TOMADOS DE", width/2, (height/4)+165);
+          text("PERSONAJES HECHOS EN", width/2, (height/4)+300);
+          text("INSPIRACION DEL JUEGO", width/2, (height/4)+380);
+          text("ORIENTADO POR ", width/2, (height/4)+480);
+         textSize(15);
+        fill(255,255,0);
+        text("JHORMAN STIVEN MALDONADO REY", width/2, (height/4)-50);
+        text("JUAN SEBASTIAN TOLOZA ORTEGA", width/2, (height/4)-30);
+        text("TATIANA MALDONADO", width/2, (height/4)+30);
+        text("GALAGA", width/2, (height/4)+410);
+        text("PISKEL", width/2, height/4+330);
+        text("HOLLOW KNIGHT", width/2, (height/4)+70);
+        text("SONIDOS MP3", width/2, (height/4)+190);
+        text("DOOM",width/2, (height/4)+130);
+        text("SHINGEKY NO KYOYIN", width/2, (height/4)+220);
+        text("WORLDCRAFT", width/2, (height/4)+250);
+        text("NAMCO", width/2, (height/4)+440);
+        text("CAMILO EDUARDO ROJAS ORTIZ", width/2, (height/4)+515);
         }
        
        
@@ -298,8 +311,9 @@ void menu() {
   if (niveles==1) {
    
     textSize(30);
+    fill(255,300,100);
+    text("PRESIONE ESPACIO PARA SELECCIONAR", width/2, (height/3)-80);
     fill(255,0,255);
-    
     text("SELECT DIFFICULTY:", width/2, height/3);
      fill(0);
     text("FACIL", width/2, height/3+50);
