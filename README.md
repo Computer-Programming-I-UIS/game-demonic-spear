@@ -34,6 +34,8 @@ INATRUCCIONES
 
 GAMEPLAY
 
+[![Watch the video](https://img1.blogblog.com/img/video_object.png)](https://youtu.be/DE1GoCU7jhU)
+
 CAPTURAS DEL JUEGO
 
 ![Juego 1](https://1.bp.blogspot.com/-c7W_Uh5jirY/X1MkHtTPHkI/AAAAAAAAvl4/1wIgRK6N3TopFyYPTli5LpnWlQJ5yplDwCLcBGAsYHQ/s320/Juego%2B1.png)
