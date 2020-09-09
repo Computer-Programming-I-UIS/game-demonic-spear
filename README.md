@@ -18,7 +18,7 @@ El juego es una adaptacion de Galaga, un clasico del mundo arcade, en el juego e
 
 BANNER
 
-![Banner](https://1.bp.blogspot.com/-QN7DjKpy-WA/X1Lm9U-iCkI/AAAAAAAAvic/NFqhtR0PPb4MCrs13uvFxno4KdMnSK_AACLcBGAsYHQ/s320/banner.png)
+![Banner](https://1.bp.blogspot.com/-dkAXIpwMDbw/X1kxGSFl0tI/AAAAAAAAwQk/r9BhjrV7PvsUBPl5Xxjg_w-BUYY1FSzQQCLcBGAsYHQ/s320/BANNER.jpeg)
 
 PANTALLA DE IMICIO
 
